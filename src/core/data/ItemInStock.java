@@ -1,4 +1,6 @@
-package core;
+package core.data;
+
+import core.service.Provider;
 
 public class ItemInStock {
 
