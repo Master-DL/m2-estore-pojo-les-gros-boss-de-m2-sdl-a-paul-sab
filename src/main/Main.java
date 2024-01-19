@@ -1,6 +1,6 @@
 package main;
 
-import core.data.Bank;
+import core.service.Bank;
 import core.Client;
 import core.service.Provider;
 import core.service.Store;
