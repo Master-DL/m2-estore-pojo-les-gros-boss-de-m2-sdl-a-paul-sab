@@ -1,14 +1,14 @@
-package core.service;
+package core.service.impl;
 
 import core.data.Cart;
 import core.data.Order;
-import core.service.Store;
+import core.service.IClient;
 import estorePojo.exceptions.InsufficientBalanceException;
 import estorePojo.exceptions.InvalidCartException;
 import estorePojo.exceptions.UnknownAccountException;
 import estorePojo.exceptions.UnknownItemException;
 
-public class Client implements Runnable {
+public class Client implements Runnable, IClient {
 
     private Store store;
 
@@ -36,7 +36,7 @@ public class Client implements Runnable {
         System.out.println();
     }
     
-    private void scenario1(
+    public void scenario1(
             String item, int qty, String address, String account ) {
         
         try {
@@ -59,7 +59,7 @@ public class Client implements Runnable {
         System.out.println(order);
     }
 
-    private void scenario2(
+    public void scenario2(
             String[] items, int[] qties, String address, String account ) {
         
         try {

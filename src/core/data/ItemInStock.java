@@ -1,6 +1,6 @@
 package core.data;
 
-import core.service.Provider;
+import core.service.impl.Provider;
 
 public class ItemInStock {
 
