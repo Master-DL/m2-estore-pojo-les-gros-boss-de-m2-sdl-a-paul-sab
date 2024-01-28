@@ -1,7 +1,7 @@
 package main;
 
 import core.service.Bank;
-import core.Client;
+import core.service.Client;
 import core.service.Provider;
 import core.service.Store;
 

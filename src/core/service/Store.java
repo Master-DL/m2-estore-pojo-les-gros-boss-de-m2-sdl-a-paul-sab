@@ -5,7 +5,6 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-	import core.Client;
 	import core.data.Cart;
 	import core.data.ItemInStock;
 	import core.data.Order;

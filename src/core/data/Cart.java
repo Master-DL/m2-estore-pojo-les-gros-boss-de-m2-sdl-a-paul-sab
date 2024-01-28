@@ -1,6 +1,6 @@
 package core.data;
 
-import core.Client;
+import core.service.Client;
 
 import java.util.HashMap;
 import java.util.Map;
