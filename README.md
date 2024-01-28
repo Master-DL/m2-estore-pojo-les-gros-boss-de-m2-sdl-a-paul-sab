@@ -5,18 +5,16 @@ Projet pour l'enseignement des composants logiciels
 ---
 ## Mathis
 
-#### Couplage et dépendances - 1  
+#### Couplage et dépendances
 4 objtes service : Bank, Client, Provider, Store  
 4 objets Data : Account, Cart, ItemInStock, Order   
 <u>Raisonnement : </u>  
 Client : car init **Store** dedans (on init pas un service dans une data)  
+<span style="color:red">Et en meme temps getter setter de Client dans Cart ?? :/ </span>  
 Store : car init **Bank** et **Provider** dedans  
-Bank : <span style="color:red">Pas sur </span>, globalement seulement setter mais nom de fct laisse croire que c'est un service
+Bank : <span style="color:red">Pas sur </span>, globalement seulement setter mais nom de fct laisse croire que c'est un service   
 Provider : fct "order"  
-
-
-#### Couplage et dépendances - 2
-#### Couplage et dépendances - 3
+![](assets/schema.png)
 #### Services offerts - 1
 #### Services offerts - 2
 #### Services offerts - 3
