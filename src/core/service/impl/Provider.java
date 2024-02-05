@@ -18,12 +18,7 @@ public class Provider implements IProvider {
 		itemPrices.put("DVD", 20d);
 	}
 
-	/**
-	 * Get the price of an item provided by this provider.
-	 *
-	 * @param item
-	 * @return
-	 */
+
 	public double getPrice(Object item) throws UnknownItemException {
 
 		if (!itemPrices.containsKey(item))

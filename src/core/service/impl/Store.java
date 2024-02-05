@@ -8,6 +8,8 @@ import java.util.Set;
 	import core.data.Cart;
 	import core.data.ItemInStock;
 	import core.data.Order;
+	import core.service.IBank;
+	import core.service.IProvider;
 	import core.service.IStore;
     import core.Client;
     import estorePojo.exceptions.InsufficientBalanceException;
@@ -17,8 +19,8 @@ import estorePojo.exceptions.UnknownItemException;
 
 public class Store implements IStore {
 
-	    private Provider provider;
-	    private Bank bank;
+	    private IProvider provider;
+	    private IBank bank;
 
 	    /**
 	     * Constructs a new StoreImpl

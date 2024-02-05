@@ -5,6 +5,14 @@ import estorePojo.exceptions.UnknownItemException;
 
 public interface IProvider {
 
+
+    /**
+     * Get the price of an item provided by this provider.
+     *
+     * @param item
+     * @return
+     */
+    double getPrice(Object item) throws UnknownItemException;
     /**
      * Emit an order for items. The provider returns the delay for delivering the
      * items.
