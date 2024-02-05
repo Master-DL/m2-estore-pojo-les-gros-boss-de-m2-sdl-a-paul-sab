@@ -1,14 +1,14 @@
-package core.service.impl;
+package core;
 
 import core.data.Cart;
 import core.data.Order;
-import core.service.IClient;
+import core.service.impl.Store;
 import estorePojo.exceptions.InsufficientBalanceException;
 import estorePojo.exceptions.InvalidCartException;
 import estorePojo.exceptions.UnknownAccountException;
 import estorePojo.exceptions.UnknownItemException;
 
-public class Client implements Runnable, IClient {
+public class Client implements Runnable {
 
     private Store store;
 
